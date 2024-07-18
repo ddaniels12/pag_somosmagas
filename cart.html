@@ -52,8 +52,8 @@
         opacity: 0.7;
       }
       .cart{
-        background-color:#E8E4F7;
-        border: 0px;
+        border: 3px;
+        border-color: #000;
       }
 
       /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -170,22 +170,9 @@ POST REDES SOCIALES #B0E2F5
 
 <body onload="createProduct()">
   <div class="container-fluid mt-2" style="max-width: 1200px;">
-    <div class="row align-items-center mb-2">
-      <div class="col-10 col-sm-6 text-start">
+    <div class="row mb-2">
+      <div class="col-12 text-center">
         <img src="images/Logo_Somos_Magas-1.png" alt="logo" class="img-fluid" style="max-width: 150px;">
-      </div>
-      <div class="col-2 col-sm-6 text-end">
-        <button class="cart btn" onClick="openNav()">
-          <img src="images/product/cart.png" alt="logo2" style="width: 65px; height: 65px;">
-        </button>
-        <div id="sidepanel" class="sidepanel">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div>
-            <div id="cartside"></div><br>
-            <p id="sumaPago">Total: </p> <br>
-            <button style="float:left; position: relative;bottom: 20px;" onclick="pagar()">Pagar</button>
-          </div>
-        </div>
       </div>
     </div>
     
@@ -200,7 +187,10 @@ POST REDES SOCIALES #B0E2F5
               <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="cart.html">Catálogo</a>
+              <a class="nav-link active" href="cart.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="testimonios.html">Reseñas</a>
@@ -210,13 +200,26 @@ POST REDES SOCIALES #B0E2F5
             </li>
           </ul>
         </div>
+        <div>
+          <button class="cart btn" onClick="openNav()">
+            <img src="images/product/cart.png" alt="logo2" style="max-width: 40px">
+          </button>
+          <div id="sidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div>
+              <div id="cartside"></div><br>
+              <p id="sumaPago">Total: </p> <br>
+              <button style="float:left; position: relative;bottom: 20px;" onclick="pagar()">Pagar</button>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   </div>
 
-    <div class="container" style="width: 1000px;">
+    <div class="container" style="width: 1200px;">
 
-      <div id="creation" class="row justify-content-center" style="width: auto;background-color: #B0E2F5;">
+      <div id="creation" class="row justify-content-center" style="width: auto;">
 
       </div>
     </div>
@@ -231,7 +234,7 @@ POST REDES SOCIALES #B0E2F5
           <a
             data-mdb-ripple-init
             class="btn btn-link btn-floating btn-lg text-body m-1"
-            href=""
+            href="https://www.instagram.com/somos_magas/"
             role="button"
             data-mdb-ripple-color="dark"
             ><img src="images/instalogo.png" style="width: 30px;"></a><i class="fab fa-instagram"></i

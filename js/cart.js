@@ -1,8 +1,8 @@
 "use strict"
 // ID, NOMBRE, PRECIO, NOMBRE-IMAGEN, Desc
-const catalogo=[["1","Reiki",25000,"Tarot.jpg","Desc. Producto"],
-                ["2","Tarot",10000,"Tarot.jpg","Desc. Producto"],
-                ["3","Decorativo",50000,"Tarot.jpg","Desc. Producto"]]
+const catalogo=[["1","Maneki Neko",25000,"producto1.png","Desc. Producto"],
+                ["2","Maneki Neko",10000,"producto1.png","Desc. Producto"],
+                ["3","Maneki Neko",50000,"producto1.png","Desc. Producto"]]
 let sumapagar=0
 let i=0
 let cartProduct=catArray()
@@ -87,7 +87,7 @@ function openNav() {
     let aux=""
     console.log("hola")
     for(let id of catalogo){
-      aux='<div class="card col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex"> <img class="hidden" src="images/product/'+id[3]+'" alt="Producto aqui"><div class="hide">I am shown when someone hovers over the div above.</div><h1>'+id[1]+'</h1><p class="price">'+id[2]+'</p><p>'+id[4]+'</p><p><button id="'+id[0]+'" onclick="addToCart(this.id)">Añadir</button></p></div>'
+      aux='<div class="card col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex"> <img class="hidden" src="images/product/productos/'+id[3]+'" alt="Producto aqui"><div class="hide">I am shown when someone hovers over the div above.</div><h1>'+id[1]+'</h1><p class="price">'+id[2]+'</p><p>'+id[4]+'</p><p><button id="'+id[0]+'" onclick="addToCart(this.id)">Añadir</button></p></div>'
       document.getElementById("creation").innerHTML+=aux
       console.log("adios")
     }

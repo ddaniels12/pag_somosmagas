@@ -9,7 +9,7 @@ for (let ekis of ekisde){
   
 
 function cargaPago(){
-    document.getElementById("pagoResumen").innerHTML=xd+"Valor carrito: "+getCookie("sumaPrecio")
+    document.getElementById("pagoResumen").innerHTML="Valor carrito: "+getCookie("sumaPrecio")
 }
 
 
